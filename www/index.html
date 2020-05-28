@@ -8,42 +8,47 @@
   <script src="lib/jquery.min.js"></script>
   <script src="components/plugin.js"></script>
 
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="components/loader.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="lib/css/bootstrap.min.css">
+  <link rel="stylesheet" href="lib/css/materialize.min.css">
 </head>
 
 <body>
-  <div class="container">
-
-    <div class="row">
-      <div class="col-sm">
-        <h2>PLUGINS 2</h2>
-      </div>
+  <nav>
+    <div class="nav-wrapper">
+      <a class="brand-logo"><b><i>Plugins 2</i></b></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+      </ul>
     </div>
+  </nav>
 
+  <div class="row">
+    <br><br>
     <div class="row">
-      <div class="col-sm">
-        <div class="form-group">
-          <button class="btn btn-primary btn-block" id="camera">Camera</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-sm">
+      <div class="col s10 offset-s1">
         <img id="imagem" class="img-responsive imagem">
       </div>
     </div>
 
     <div class="row">
-      <div class="col-sm">
-        <div class="form-group">
-          <button class="btn btn-primary btn-block" id="camera">Código de barra</button>
-        </div>
+      <div class="col s10 offset-s1">
+        <a class="btn-large black" id="camera">Tirar foto<i class="material-icons">camera_alt</i></a>
       </div>
     </div>
-    
+
+    <div class="row">
+      <div class="col s10 offset-s2">
+        <a class="btn-large black" id="codigo">Código de barras<i class="material-icons">code</i></a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s10 offset-s3">
+        <a class="btn-large black" id="conexao">Teste de conexão<i class="material-icons">network_wifi</i></a>
+      </div>
+
+    </div>
   </div>
 </body>
 </html>
